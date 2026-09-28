@@ -4,7 +4,8 @@ class Solution {
         int count = 0;
         for(int val : nums){
             if(val!=0){
-                nums[count++] = val;
+                nums[count] = val;
+                count++;
             }
         }
         while(count<n){
