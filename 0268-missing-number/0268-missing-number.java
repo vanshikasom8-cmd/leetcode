@@ -22,3 +22,4 @@ class Solution {
 // int totalSum =(n*(n+1)/2);
 // return totalSum = sum;
 // }
+        
