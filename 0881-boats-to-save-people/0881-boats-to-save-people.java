@@ -4,7 +4,7 @@ class Solution {
         Arrays.sort(people);
         int ans = 0;
         int low =0;
-        int high=people.length-1;
+        int high=n-1;
         while(low <= high){
             if(people[low]+people[high]<=limit){
                 low++;
