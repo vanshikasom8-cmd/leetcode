@@ -6,15 +6,15 @@ class Solution {
         int high = m*n-1;
         while(low<=high){
             int mid = low+(high-low)/2;
-            int row = mid/m;
-            int col = mid%m;
+            int row = mid / m;
+            int col = mid % m;
             if(matrix[row][col] == target){
                 return true;
             }
-            if(matrix[row][col] < target){
+            else if(matrix[row][col] < target){
                 low = mid+1;
             }
-            if(matrix[row][col] > target){
+            else{
                 high = mid-1;
             }
         }
